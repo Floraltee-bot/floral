@@ -1,0 +1,37 @@
+.resume{
+    height: 80dvh;
+    background-color: transparent;
+}
+.resume-link{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: azure;
+    transition: all 0.3s ease;
+    margin: 10px;
+
+}
+.resume-link:hover{
+    background-color: #007bff;
+    color: azure;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+h2{
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.cls{
+    text-align: center;
+}

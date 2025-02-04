@@ -1,0 +1,714 @@
+/* *{
+    max-width: 1440px;
+} */
+ body{
+    background-color: white;
+ }
+
+.logo {
+    width: 100px;
+}
+
+
+.slider {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg');
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 20px;
+    animation: zoom 5s infinite alternate;
+}
+.slider .mouse-icon{
+    margin-top: 30px;
+    font-size: 2rem;
+    color: white;
+    animation: wiggle 3s infinite alternate;
+}
+ 
+
+
+.slidertext{
+    text-align: center;
+    justify-items: center;
+    padding: 150px 0;
+}
+
+.slidertext h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:white;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.slidertext h2{
+    
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: crimson;
+   margin: 5px;
+    text-align: center;
+}
+
+.sliderbuttons {
+    margin-top: 100px;
+    
+}
+
+
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+header {
+    padding: 0 20px;
+}
+
+header > div > nav > ul > li > a {
+    text-decoration: none;
+    color: crimson;
+    text-transform: lowercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header > div > nav > ul > li > a:hover {
+    color: purple;
+}
+
+header > div > nav > ul > li {
+    list-style: none;
+    display: inline;
+    padding-right: 30px;
+}
+
+.cta {
+    border: 2px solid crimson;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: crimson;
+    font-size: 24px;
+}
+
+.hamburger {
+    display: none;
+    margin-left: 100px;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 36px;
+}
+.hamburger {
+    color: crimson;
+}
+
+.ctamob {
+    color: black;
+    position: relative;
+}
+
+
+.cta:hover {
+    border: none;
+    background-color: purple;
+    color: white;
+}
+
+.maggi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: crimson;
+    margin-top: 0;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subtitle {
+    color: purple;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.overview-img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.gridlock {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.moblock {
+    display: none;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* @media screen and (max-width: 767px) {
+    .gridlock {
+        display: none;
+    }
+
+    .moblock {
+        display: block;
+        gap: 0;
+        margin-top: 20px;
+    }
+    
+    header > div > nav > ul > li {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 100px;
+        color: crimson;
+        cursor: pointer;
+    }
+
+    .contactsection{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .sliderbuttons a {
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .footer .foot{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contcentright {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .contcentright .inputcontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+     */
+
+    @media screen and (max-width: 767px) {
+        .gridlock {
+            display: none;
+        }
+    
+        .moblock {
+            display: block;
+            gap: 0;
+            margin-top: 20px;
+        }
+        .title{
+            text-align: center;
+        }
+        .subtitle{
+            text-align: center;
+        }
+        header > div > nav > ul > li {
+            display: none;
+        }
+    
+        .cta {
+            display: none;
+        }
+        
+    
+        .hamburger {
+            display: flex;
+            margin-left: 100px;
+            padding-right: 20px;
+        }
+    
+        .contactsection{
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    
+        .sliderbuttons a {
+            display: block;
+            margin-bottom: 30px;
+        }
+    
+        .footer .foot {
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+    
+        /* .contcentright{
+            padding-left: 20px;
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr;
+        } */
+    
+        .contcentright .inputcontainer{
+            display: grid;
+            align-items: center;
+            padding-left: 40px;
+            width: 150%;
+        }
+        .gta2{       
+             text-decoration: none;
+    padding: 8px 20px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+        }
+        .gta2:hover{
+            animation: wiggle 0.4s ease infinite;
+    color: purple;
+        }
+        .gta2::after{
+            content: ' \2605';
+        }
+    
+        .inputcontainer {
+            margin-top: -30px;
+            padding: 10px;
+        }
+        .gta22{
+            text-align: center;
+        }
+    
+        .inputcontainer i{
+            margin-bottom: -41px;
+            margin-left: -11px;
+            
+        }
+    
+        .textareacontainer{
+            padding-left: 40px;
+            width: 150%;
+        }
+        .foottwo{
+            
+        }
+    
+    }
+
+.gta {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gta:hover{
+    animation: wiggle 0.4s ease infinite;
+    color: purple;
+}
+
+@keyframes wiggle {
+    0%, 100% {transform: rotate(0);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-5deg);}
+}
+
+/* .gta::before {
+    content: '\2605';
+} */
+
+.gta::after {
+    content: ' \2605';
+}
+
+.gridsection {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 10px;
+    background-color: rgb(231, 231, 114);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+}
+
+.sectiongrid img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.sectiongrid {
+    justify-items: center;
+    max-width: 100%;
+}
+
+.gridsectiontext {
+    /* background-color: crimson; */
+    /* border-radius: 20px; */
+    align-items: center;
+    /* border: 1px solid white; */
+    margin: 10px ;
+    /* box-shadow: 0 8px 12px; */
+}
+
+.gridsectiontext h2 {
+    color: purple;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.gridsectiontext h4 {
+    /* font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: crimson; */
+    color: crimson;
+    margin-top: 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+      
+}
+
+.contactsection{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    gap: 30px;
+}
+
+.contcentleft{
+    width: 40%;
+    text-align: left;
+}
+
+.contcentleft p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+.contcentright{
+    width: 60%;
+}
+
+.inputcontainer{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    
+}
+
+.inputcontainer input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-right: 30px;
+    height: 40px;
+    padding-left: 30px;
+    flex: 1;
+    margin-left: -20px;
+    background: transparent;
+}
+
+.inputcontainer i{
+    position: relative;
+}
+
+.inputcontainer textarea{
+    width: 90%;
+    height: 40px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    flex: 1;
+    margin-left: -20px;
+    background: transparent;
+}
+
+textarea{
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.inputcontainer textarea i{
+    position: relative;
+}
+
+.textareacontainer{
+    padding-top: 30px;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textareacontainer i{
+    position: relative;
+    
+}
+
+.textareacontainer textarea{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid;
+    margin-right: 30px;
+    flex: 1;
+    padding-left: 30px;
+    margin-left: -20px;
+    background: transparent;
+   
+}
+input:focus{
+    border-bottom: 3px solid crimson;
+}
+
+textarea:focus{
+    border-bottom: 3px solid crimson;
+}
+
+.submitform{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+
+}
+
+.submitform a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px ;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: crimson;
+    
+
+}
+
+.foot {
+    background-color: crimson;
+    color: white;
+    padding: 20px 80px 50px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    list-style: none;   
+    border-radius: 20px;
+}
+
+.copyright p {
+    background-color: white;
+    color: crimson;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sonic {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 6px;
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+
+}
+
+.footer > div > div > a {
+    text-decoration: none;
+    color: white;
+}
+.foot-title{
+    text-align: left;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.foottwo > li {
+    text-align: left;
+    padding: 8px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.foottwo > li::before{
+    content: ' \f054';
+    font-family: "FontAwesome";
+}
+.footlorem{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fta {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 0 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.fta:hover{
+    background-color: purple;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.fta::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+}
+
+.fta:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hta {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: transform 0.2s ease;
+}
+
+.hta:hover {
+    animation-name: bounce;
+    animation-duration: 5s;
+    background-color: purple;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px);}
+}
+
+.gridsectionbutton {
+    margin: 30px;
+    text-align: center;
+}
+
+#back-to-top{
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background-color:crimson;
+    border:none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    /* display: none; */
+    animation: bounce 5s infinite alternate;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes wiggle{
+    0%, 100%{transform: translateX(0);}
+    50%{transform: translateX(10px);}
+}
+@keyframes zoom{
+    0%, 100%{transform: scale(1);}
+    100%{transform: scale(1.04);}
+}
+@keyframes bounce{
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    20%{
+        opacity: 1;
+        visibility: visible;
+    }
+    80%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.theme-toggle{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: crimson;
+    transition: color 0.3s;
+    background: transparent;
+    border: none;
+}
+.theme-toggle i{
+    color: crimson;
+}

@@ -1,0 +1,43 @@
+.image img{width: 200px;
+height:50dvh;
+border-radius: 6px;
+margin: -2px;
+}
+.card{background-color: cornflowerblue;
+display: flex;
+text-align: left;
+justify-content: left;
+height: auto;
+gap: 10px;
+width: 700px;
+border-radius: 5px;
+box-shadow: 0;
+}
+body{justify-content: center;
+display: flex;
+align-items: center;
+height: 100dvh;
+background-color: bisque;
+margin: 0;
+justify-content: center;}
+
+.content h1{font-weight: bold;
+font-style: unset;
+font-size: xx-large;
+text-align: center;}
+.content p{font-style: italic;
+text-align: justify;
+padding: auto;
+align-items: center;
+margin: 10px;
+;}
+.Price{margin-bottom: 15px;}
+.old-price{text-decoration: line-through;}
+.New-price{color: brown;
+font-weight: bold;}
+.Purchase{text-decoration: none;
+border: purple solid ; background-color: purple; 
+color: aliceblue; border-radius: 4px
+}
+
+
